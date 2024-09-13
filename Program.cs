@@ -7,12 +7,14 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Get the port from the environment, default to 80 if not set
+var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
+app.Urls.Add($"http://*:{port}");
+
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 app.UseHttpsRedirection();
 

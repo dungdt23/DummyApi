@@ -31,3 +31,4 @@ C:\Users\dung.daotien\Demos\Dotnet\DummyApi\obj\Debug\net8.0\refint\DummyApi.dll
 C:\Users\dung.daotien\Demos\Dotnet\DummyApi\obj\Debug\net8.0\DummyApi.pdb
 C:\Users\dung.daotien\Demos\Dotnet\DummyApi\obj\Debug\net8.0\DummyApi.genruntimeconfig.cache
 C:\Users\dung.daotien\Demos\Dotnet\DummyApi\obj\Debug\net8.0\ref\DummyApi.dll
+C:\Users\dung.daotien\Demos\Dotnet\DummyApi\obj\Debug\net8.0\DummyApi.sourcelink.json
