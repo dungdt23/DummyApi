@@ -21,16 +21,16 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '8.x'
-          include-prerelease: true
+          include-prerelease: true 
 
       - name: Restore
-        run: dotnet restore ./DummyApi.sln
+        run: dotnet restore ./DummyApi.csproj
 
       - name: Build
-        run: dotnet build ./DummyApi.sln --configuration Release --no-restore
+        run: dotnet build ./DummyApi.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./DummyApi.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+        run: dotnet publish ./DummyApi.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
       - name: Deployment
         uses: azure/webapps-deploy@v2
